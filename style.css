@@ -40,7 +40,7 @@
 .main-img{
     height: 550px;
     width: 95%;
-    background-image: url(/assets/furnuture1.webp);
+    background-image: url(./assets/furnuture1.webp);
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -62,11 +62,12 @@
     height: auto;
     background-color: white;
     justify-content: space-evenly;
-    padding: 30px;
+    padding:30px;
     border-radius: 10px;
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-end;
+    margin-bottom: 10px;
     
 }
 .input-group{
@@ -280,6 +281,56 @@
         font-weight: 600;
     }
 }
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 35px;
+    padding: 100px 30px;
+    color: white;
+    background-color: black;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    h4{
+        font-size: 20px;
+    }
+    p{
+        line-height: 30px;
+    }
+    img{
+        width: 80px;
+        height: 40px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 20px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: rgb(134, 132, 132);
+        font-weight: 600;
+        transition: all 0.2s ease-in;
+        &:hover{
+            transform: translateY(-3px) translateX(-5px);
+            color: #fff;
+        }
+    }
+}
+
+.footer-icon{
+    display: flex;
+    gap: 40px;
+    transition: all 0.2s ease-in;
+   
+}
+.footer-icon i:hover{
+    color: gray;
+}
+
 @media(max-width:986px){
     .advantages-container{
         flex-direction: column-reverse;
